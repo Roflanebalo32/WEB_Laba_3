@@ -1,128 +1,126 @@
 /* Общие стили */
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    display: inline-block;
+}
+
+/* Хедер */
+.header {
+    position: relative;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+
+/* Секция с героем */
+.hero {
+    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* Flex контейнеры */
-.header-container, 
-.hero, 
-.integration-grid, 
-.features-grid, 
-.promotion-grid, 
-.pricing-grid, 
-.testimonials-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Grid контейнеры */
-.features-grid, 
-.promotion-grid, 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-/* Стили для секций */
-section {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Адаптивные изображения */
-img {
+.hero-image-wrapper {
+    width: 1273px;
+    height: 720px;
     max-width: 100%;
-    height: auto;
-}
-
-.logo {
+    margin: 0 auto;
     position: relative;
-    left: 20px;
-    top: 25px;
+    overflow: hidden;
+    margin: 30px;
 }
 
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
 
+.text-on-image {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 628px;
+    max-width: 90%;
+    font-size: 72px;
+    line-height: 74px;
+    color: #fff;
+    text-align: left;
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 30px;
+    text-align: center;
+}
 
 /* Кнопки */
-button {
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
 .connect-button {
-
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: normal;
-    display: flex; /* Изменено с inline-block */
-    align-items: center; /* Вертикальное центрирование */
-    justify-content: center; /* Горизонтальное центрирование */
-    position: relative;
-    top: 25px;
-    right: 20px;
     height: 39px;
     border-radius: 30px;
     background-color: black;
     color: white;
-    padding: 0 24px; /* Убрали вертикальные padding */
+    padding: 0 24px;
     border: none;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .demo-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
     background-color: #ff6600;
     color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* Карточки */
-.feature, 
-.pricing-plan, 
-.testimonial {
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
+/* Адаптивность */
+@media (max-width: 1273px) {
+    .hero-image-wrapper {
+        height: auto;
+        aspect-ratio: 1273/720;
+    }
 }
 
-.feature:hover, 
-.pricing-plan:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Тарифы */
-.pricing-plan.featured {
-    border: 2px solid #0066cc;
-    position: relative;
-}
-
-/* Медиазапросы для адаптивности */
 @media (max-width: 768px) {
-    .header-container, 
-    .hero {
-        flex-direction: column;
-        text-align: center;
+    .text-on-image {
+        font-size: 36px;
+        line-height: 1.2;
+        top: 60px;
     }
     
-    .features-grid, 
-    .promotion-grid {
-        grid-template-columns: 1fr;
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+    
+    .connect-button {
+        margin-top: 15px;
     }
 }
