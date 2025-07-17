@@ -137,9 +137,8 @@ body {
     display: flex;
     justify-content: flex-start; /* Важно: меняем с center на flex-start */
     gap: 30px;
-    padding: 68px 0;
     max-width: calc(1200px + 30px); /* Добавляем наш отступ */
-    margin: 0 0 0 30px; /* Только левый отступ */
+    margin: 100px 0px 100px 30px; 
     width: 100%;
     box-sizing: border-box;
     overflow-x: visible; /* На случай обрезки */
@@ -195,6 +194,69 @@ body {
     display: inline-block;
     margin-top: 47px;
 
+}
+
+.text-block {
+
+    padding: 13px 82px 43px 30px;
+    width: 1273px;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #A9FF2C;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    text-align: left; /* Явно указываем выравнивание по левому краю */
+}
+
+.text-block p {
+
+    width: 1161px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px;
+    margin: 0; /* Убираем возможные отступы */
+    padding: 0; /* Убираем возможные отступы */
+    text-align: left; /* Явное выравнивание по левому краю */
+}
+
+.parallel-text-block {
+    display: flex;          /* Размещаем блоки в строку */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    gap: 180px;             /* Расстояние между блоками */
+    margin: 80px 0px 80px 30px;
+}
+
+.left-block {
+    width: 560px;
+}
+
+.right-block {
+    width: 490px;
+    margin-top: 15px;
+}
+
+.big-text {
+    color: #000;
+    font-family: Roboto;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 58px;
+    margin: 0;
+    text-align: left;
+}
+
+.uslugi {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    text-align: left;
 }
 
 @media (max-width: 1273px) {
