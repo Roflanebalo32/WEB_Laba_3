@@ -35,6 +35,32 @@ body {
     margin-top: -8px;
 }
 
+/* Кнопки */
+
+.connect-button {
+
+    text-align: center;
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /*letter-spacing: 1px;*/
+    color: white;
+    color: hsl(0, 0%, 90%);
+    height: 39px;
+    border-radius: 30px;
+    background-color: black;
+    padding: 6px 18px 9px;
+    margin-top: -10px;
+    border: none;
+    cursor: pointer;
+}
+
+.connect-button p {
+    width: 172px;
+}
+
 /* Секция с героем */
 .hero {
     position: relative;
@@ -48,7 +74,7 @@ body {
     width: 1273px;
     height: 730px;
     padding-top: 8px;
-    margin: 30px;
+    margin: 30px 30px 0px 30px;
     box-sizing: border-box;
     max-width: 100%;
     position: relative;
@@ -104,55 +130,26 @@ body {
     z-index: 2;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 3;
-    padding: 30px;
-    text-align: center;
-}
-
-/* Кнопки */
-
-.connect-button {
-
-    text-align: center;
-    font-style: normal;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: white;
-    color: hsl(0, 0%, 90%);
-    height: 39px;
-    border-radius: 30px;
-    background-color: black;
-    padding: 6px 18px 9px;
-    margin-top: -10px;
-    border: none;
-    cursor: pointer;
-}
-
 /* Стили для блоков с информацией */
 .info-blocks {
+
     display: flex;
     justify-content: flex-start; /* Важно: меняем с center на flex-start */
     gap: 30px;
-    max-width: calc(1200px + 30px); /* Добавляем наш отступ */
-    margin: 100px 0px 100px 30px; 
-    width: 100%;
+    margin: 98px 30px 100px 30px;
+    width: 1273px;
     box-sizing: border-box;
-    overflow-x: visible; /* На случай обрезки */
 }
 
 .info-block {
+
     flex: 1;
     flex-shrink: 0;
-    min-width: 622px;
-    width: 100%;
+    width: 622px;
     height: 560px;
     background: #fff;
     border-radius: 20px;
-    padding: 57px 30px 40px;
+    /*padding: 57px 30px 40px;*/
     border: 1px solid #e0e0e0;
     text-align: center;
     display: flex;
@@ -162,13 +159,14 @@ body {
 
 .info-block img {
 
+    margin-top: 56px;
     width: 80px;
     height: 80px;
-    margin: 0 0 20px;
 }
 
-.info-block h2 {
+.COVID-19 {
 
+    margin: 20px 83px 0px 77px;
     min-width: 300px;
     max-width: 462px;
     position: relative;
@@ -181,10 +179,9 @@ body {
     display: inline-block;
 }
 
-.info-block p {
+.hoteza_web {
     
-    min-width: 535px;
-    max-width: 550px;
+    width: 534px;
     position: relative;
     font-size: 21px;
     line-height: 30px;
@@ -192,8 +189,48 @@ body {
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
     display: inline-block;
-    margin-top: 47px;
+    margin: 47px 47px 0px 41px;
+}
 
+.Integration {
+
+    margin: 20px 167px 0 161px;
+    width: 294px;
+    position: relative;
+    font-size: 52px;
+    line-height: 58px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+}
+
+.PMS {
+
+    margin: 0px 113px 0px 107px;
+    width: 402px;
+    position: relative;
+    font-size: 52px;
+    line-height: 58px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+}
+
+.sync {
+    
+    width: 548px;
+    position: relative;
+    font-size: 21px;
+    line-height: 30px;
+    font-family: Roboto;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: inline-block;
+    margin: 47px 40px 0px 34px;
 }
 
 .text-block {
@@ -260,11 +297,12 @@ body {
 }
 
 .features-grid {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    column-gap: 30px;
+    row-gap: 64px;
+    margin: 0px 30px 0px 30px;
 }
         
 .feature {
@@ -274,16 +312,15 @@ body {
 }
         
 .image-block {
-    background-color: white;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 100%;
-    height: 200px;
+
+    border-radius: 20px;
+    background: #F1F1F1;
+    width: 622px;
+    height: 465px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .image-block img {
@@ -293,20 +330,57 @@ body {
 }
 
 .text-content {
+    
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
-.feature h3 {
-    margin: 0 0 20px 0;
-    color: #333;
-    font-size: 20px;
+.feature h2 {
+
+    font-size: 26px;
+    margin-top: 22px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 130.769% */
 }
         
 .feature p {
-    margin: 0;
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
+
+    font-size: 20px;
+    margin-top: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+
+.feature .text2_1,
+.feature .text2_2,
+.feature .text3_2 {
+    font-size: 27px; /* Переопределяем размер h3 */
+}
+
+.feature .text2_1,
+.feature .text2_2 {
+    margin-top: 23px;
+}
+
+.feature .ptext2_1,
+.feature .ptext2_2,
+.feature .ptext3_2 {
+    font-size: 21px; /* Переопределяем размер p */
+}
+
+.feature .ptext3_2 {
+    width: 247px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
