@@ -136,7 +136,7 @@ body {
     display: flex;
     justify-content: flex-start; /* Важно: меняем с center на flex-start */
     gap: 30px;
-    margin: 98px 30px 100px 30px;
+    margin: 98px 30px 0px 30px;
     width: 1273px;
     box-sizing: border-box;
 }
@@ -235,14 +235,13 @@ body {
 
 .text-block {
 
-    padding: 13px 82px 43px 30px;
     width: 1273px;
     height: 260px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #A9FF2C;
-    margin-bottom: 80px;
-    margin-left: 30px;
+    margin: 100px 0px 80px 30px;
+    padding: 13px 0px 0px 30px;
     text-align: left; /* Явно указываем выравнивание по левому краю */
 }
 
@@ -260,23 +259,23 @@ body {
     text-align: left; /* Явное выравнивание по левому краю */
 }
 
-.parallel-text-block {
+.parallel-text-block1 {
     display: flex;          /* Размещаем блоки в строку */
     align-items: flex-start; /* Выравниваем по верхнему краю */
     gap: 180px;             /* Расстояние между блоками */
     margin: 80px 0px 80px 30px;
 }
 
-.left-block {
+.left-block1 {
     width: 560px;
 }
 
-.right-block {
+.right-block1 {
     width: 490px;
     margin-top: 15px;
 }
 
-.big-text {
+.big-text1 {
     color: #000;
     font-family: Roboto;
     font-size: 52px;
@@ -329,7 +328,7 @@ body {
     object-fit: contain;
 }
 
-.text-content {
+.text-content1 {
     
     display: flex;
     flex-direction: column;
@@ -383,59 +382,920 @@ body {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .features-grid {
+.big-text {
+    width: 806px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 111.538% */
+    margin: 319px 0px 0px 301px;
+    text-align: left;
+}
+
+.parallel-text-block2 {
+    display: flex;          /* Размещаем блоки в строку */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    gap: 381px;             /* Расстояние между блоками */
+    margin: 197px 0px 79px 30px;
+}
+
+.left-block2 {
+    width: 383px;
+}
+
+.right-block2 {
+    width: 387px;
+    margin-top: 45px;
+}
+
+.big-text2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 111.538% */
+    margin: 0;
+    text-align: left;
+}
+
+.small-text2 {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    margin: 0;
+    text-align: left;
+}
+
+.promotion-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 66px;
+    margin: 79px 30px 0px 30px;
+}
+
+.promo-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+        
+.image-block-promo {
+
+    border-radius: 10px;
+    background: lightgray 50% / cover no-repeat;
+    width: 622px;
+    height: 497px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content2 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+}
+
+.promo-method h2 {
+
+    margin-top: 18px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px; /* 113.889% */
+    text-align: left;
+    width: 100%;
+}
+        
+.promo-method p {
+
+    margin-top: 38px;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    text-align: left;
+}
+
+.promo-method .text2,
+.promo-method .text3 {
+    font-size: 35px;
+}
+
+.promo-method .ptext1 {
+    font-size: 20px;
+    width: 600px;
+}
+
+.promo-method .ptext2 {
+    width: 600px;
+}
+
+.promo-method .ptext3 {
+    width: 558px;
+}
+
+.promo-method .ptext4 {
+    width: 580px;
+}
+
+.text-block1 {
+
+    width: 1273px;
+    height: 310px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #A9FF2C;
+    margin: 121px 0px 100px 30px;
+    padding: 12px 0px 0px 30px;
+    text-align: left; /* Явно указываем выравнивание по левому краю */
+}
+
+.text-block1 p {
+
+    width: 1212px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px;
+    margin: 0; /* Убираем возможные отступы */
+    padding: 0; /* Убираем возможные отступы */
+    text-align: left; /* Явное выравнивание по левому краю */
+}
+
+.admin-content {
+
+    display: flex;
+    justify-content: space-between; /* Растягивает элементы по краям */
+    align-items: flex-start; /* Выравнивает по верхнему краю */
+    column-gap: 276px;
+    margin-left: 30px;
+    width: 1273px;
+    height: 720px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F1F1F1;
+}
+
+.admin-text {
+    flex: 1;
+}
+
+.admin-text h2 {
+
+    margin-top: 138px;
+    margin-left: 47px;
+    width: 426px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 111.538% */
+}
+
+.admin-text p {
+
+    margin-top: 63px;
+    margin-left: 23px;
+    width: 474px;
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 142.857% */
+}
+
+.admin-image {
+
+    width: 500px;
+    height: 604px;
+    flex-shrink: 0;
+    margin-top: 78px;
+}
+
+.parallel-text-block3 {
+    display: flex;          /* Размещаем блоки в строку */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    gap: 139px;             /* Расстояние между блоками */
+    margin: 80px 0px 0px 30px;
+}
+
+.left-block3 {
+    width: 600px;
+}
+
+.right-block3 {
+    width: 506px;
+    margin-top: 26px;
+}
+
+.big-text3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 111.538% */
+    margin: 0;
+    text-align: left;
+}
+
+.small-text3 {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    margin: 0;
+    text-align: left;
+}
+
+.phones-images {
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    width: 1273px;
+    height: 700px;
+    flex-shrink: 0;
+    margin-top: 79px;
+    margin-left: 30px;
+    border-radius: 20px;
+    background: #F1F1F1;
+}
+
+.phone1 { 
+    align-self: flex-end;
+    margin-bottom: -53px; 
+    margin-left: 70px; 
+}
+.phone2 {
+    align-self: flex-start;
+    margin-left: 48px; 
+    margin-top: -109px; 
+}
+.phone3 { 
+    align-self: flex-end;
+    margin-bottom: -53px;
+    margin-left: 45px; 
+    margin-right: 60px; 
+}
+
+.parallel-text-block4 {
+    display: flex;          /* Размещаем блоки в строку */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    gap: 179px;             /* Расстояние между блоками */
+    margin: 81px 0px 0px 30px;
+}
+
+.left-block4 {
+    width: 560px;
+}
+
+.right-block4 {
+    width: 500px;
+    margin-top: 13px;
+}
+
+.big-text4 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 111.538% */
+    margin: 0;
+    text-align: left;
+}
+
+.small-text4 {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    margin: 0;
+    text-align: left;
+}
+
+.brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1191px;
+    margin: 51px 100px 0 70px;
+    column-gap: 83px;
+    row-gap: 56px;
+}
+
+.brand-logo {
+    width: 172px;
+    height: 102px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+/* Специальный отступ между 2 и 3 логотипом */
+.brand-logo:nth-child(5n+2) {  /* Выбираем 2-й, 7-й и т.д. логотипы */
+    margin-right: -1px; /* 83px - 1px = 82px (gap + margin) */
+}
+
+.text-block2 {
+
+    width: 1273px;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #A9FF2C;
+    margin: 128px 0px 0px 30px;
+    padding: 12px 0px 0px 30px;
+    text-align: left; /* Явно указываем выравнивание по левому краю */
+}
+
+.text-block2 p {
+
+    width: 1077px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px;
+    margin: 0; /* Убираем возможные отступы */
+    padding: 0; /* Убираем возможные отступы */
+    text-align: left; /* Явное выравнивание по левому краю */
+}
+
+.pay-text {
+    width: 522px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 111.538% */
+    margin: 80px 0px 0px 30px;
+    text-align: left;
+}
+
+.parallel-text-block5 {
+    max-width: 1273px;
+    display: flex;          /* Размещаем блоки в строку */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    gap: 0px;             /* Расстояние между блоками */
+    margin: 63px 0px 0px 30px;
+}
+
+
+.left-text1 h2{
+    margin-top: 29px;
+    margin-left: 20px;
+    width: 98px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.6px; /* 125.455% */
+}
+
+.black-underline {
+    margin-top: 23.66px;
+    width: 137.778px;
+    border: none;
+    height: 1px;
+    flex-shrink: 0;
+    background: #000;
+}
+
+.left-text2 {
+    margin-top: 31px;
+    margin-left: 20.2px;
+    width: 166px;
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.6px; /* 120% */
+}
+
+.right-text {
+    margin-left: auto;
+    width: 444px;
+    color: #000;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    letter-spacing: 0.5px;
+}
+
+.pricing-grid {
+    margin: 47px 0px 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.pricing-plan-basic {
+    width: 440px;
+    height: 866px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #F1F1F1;
+    background: #FFF;
+}
+
+.pricing-plan-basic h2 {
+    margin: 17px 0px 0px 28px;
+    width: 197px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px; /* 120.588% */
+}
+
+.Electronic-uslugi {
+    margin: 27px 0px 0px 30px;
+    color: #707378;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    text-align: left;
+}
+
+.divider1 {
+    height: 1px;
+    flex-shrink: 0;
+    margin: 63.77px 16px 27.1px 30px;
+    background-color: #E2E3E6;;
+    border: none;
+}
+
+.price-text {
+    margin: 5px 0px 0px 64px;
+    color: #707378;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    text-align: left;
+}
+
+.price-text-1 { width: 198px;}
+.price-text-2 { width: 281px; font-size: 21px; }
+.price-text-3 { width: 211px; font-size: 19px; }
+.price-text-4 { width: 268px; font-size: 19px; }
+.price-text-5 { width: 251px; font-size: 19px; }
+.price-text-6 { width: 271px; }
+.price-text-7 { width: 128px; font-size: 21px; }
+
+.pricing-plan-pro {
+    width: 440px;
+    height: 866px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #F1F1F1;
+    background: #F1F1F1;
+}
+
+.pricing-plan-pro h2 {
+    margin: 17px 0px 0px 28px;
+    width: 164px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px; /* 120.588% */
+}
+
+.accepting-orders {
+    margin: 27px 0px 0px 30px;
+    width: 310px;
+    color: #707378;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 157.895% */
+    text-align: left;
+}
+
+.divider2 {
+    height: 1px;
+    flex-shrink: 0;
+    margin: 33.77px 16px 27.1px 30px;
+    background: #E2E3E6;
+    border: none;
+}
+
+.pricing-plan-pro h3 {
+    margin: 0px 0px 10px 30px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    text-align: left;
+}
+
+.price-text-2-1 { width: 256px; font-size: 20px; }
+.price-text-2-2 { width: 176px; font-size: 19px; }
+.price-text-2-3 { width: 306px; font-size: 20px; }
+.price-text-2-4 { width: 238px; font-size: 20px; }
+.price-text-2-5 { width: 277px; font-size: 20px; }
+.price-text-2-6 { width: 143px; font-size: 20px; }
+.price-text-2-7 { width: 201px; font-size: 20px; }
+.price-text-2-9 { width: 201px; font-size: 20px; }
+
+
+.addons {
+    width: 440px;
+    height: 866px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #F1F1F1;
+    background: #000;
+}
+
+.divider3 {
+    margin: 33.77px 16px 0px 30px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+/* Стили для блока с текстом big-text*/
+/* Адаптация для планшетов */
+@media (max-width: 1024px) {
+    .big-text {
+        width: 90%;
+        font-size: 36px;
+        line-height: 42px;
+        margin: 150px auto 0 auto; /* Центрируем и уменьшаем отступ сверху */
+        padding: 0 20px; /* Добавляем отступы по бокам */
+        text-align: center; /* Центрируем текст */
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 767px) {
+    .big-text {
+        width: 100%;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 80px auto 0 auto; /* Еще меньше отступ сверху */
+        padding: 0 15px; /* Меньше отступы по бокам */
+    }
+    .pricing-grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 1273px) {
-    .hero-image-wrapper {
-        height: auto;
-        aspect-ratio: 1273/720;
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .big-text {
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 50px; /* Минимальный отступ сверху */
+        padding: 0 10px; /* Минимальные отступы по бокам */
     }
 }
 
-@media (max-width: 768px) {
-    .text-on-image {
-        top: 8px;
-        left: 8px;
-        font-size: 36px;
-        line-height: 1.2;
-        max-width: 90%;
-    }
-    
-    .header-container {
-        flex-direction: column;
-        height: auto;
-        padding: 15px 20px;
-    }
-    
-    .connect-button {
-        margin-top: 15px;
-    }
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+  /* Общие стили */
+  body {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 
-     .text-demo {
-        bottom: 40px;
-        left: 15px;
-        font-size: 16px;
-    }
+  /* Хедер */
+  .header-container {
+    padding: 10px 15px;
+  }
+  
+  /* Герой-секция */
+  .hero-image-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+  
+  .hero-image {
+    height: auto;
+  }
+  
+  .text-on-image {
+    font-size: 48px;
+    line-height: 52px;
+    max-width: 450px;
+    left: 20px;
+  }
+  
+  .text-demo,
+  .qr-instruction {
+    left: 20px;
+  }
 
-    .qr-instruction {
-        bottom: 20px;
-        left: 15px;
-        font-size: 12px;
-    }
+  /* Инфо-блоки */
+  .info-blocks {
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0 0 0;
+    gap: 20px;
+  }
 
-    .info-blocks {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-    }
-    
-    .info-block {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+  .info-block {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .COVID-19, .Integration, .PMS {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 20px 20px 0 20px;
+    width: auto;
+  }
+
+  .hoteza_web, .sync {
+    width: auto;
+    margin: 20px;
+    font-size: 18px;
+  }
+
+  /* Текстовые блоки */
+  .text-block, .text-block1, .text-block2 {
+    width: 100%;
+    margin: 50px 0;
+    padding: 20px;
+    height: auto;
+  }
+
+  .text-block p, .text-block1 p, .text-block2 p {
+    width: 100%;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  /* Параллельные текстовые блоки */
+  .parallel-text-block1, 
+  .parallel-text-block2,
+  .parallel-text-block3,
+  .parallel-text-block4 {
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0 0 0;
+    width: 100%;
+  }
+
+  .left-block1, .left-block2, 
+  .left-block3, .left-block4,
+  .right-block1, .right-block2,
+  .right-block3, .right-block4 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .big-text1, .big-text2, 
+  .big-text3, .big-text4 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .small-text2, .small-text3, 
+  .small-text4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* Сетки */
+  .features-grid, .promotion-grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 30px;
+  }
+
+  .feature, .promo-method {
+    width: 100%;
+  }
+
+  .image-block, .image-block-promo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  /* Админ секция */
+  .admin-content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 30px;
+  }
+
+  .admin-text h2, .admin-text p {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .admin-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  /* Телефоны */
+  .phones-images {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .phone1, .phone2, .phone3 {
+    margin: 20px auto;
+    position: static;
+  }
+
+  /* Бренды */
+  .brands-container {
+    width: 100%;
+    margin: 30px 0;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .brand-logo {
+    width: 120px;
+    height: 60px;
+  }
+
+  /* Цены */
+  .parallel-text-block5 {
+    flex-direction: column;
+    margin: 30px 0 0 0;
+  }
+
+  .left-text1, .left-text2 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .right-text {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Мобильные устройства (до 767px) */
+@media (max-width: 767px) {
+  /* Хедер */
+  .header-container {
+    padding: 10px;
+    height: auto;
+  }
+  
+  .logo {
+    max-width: 120px;
+    margin-top: 0;
+  }
+  
+  .connect-button {
+    font-size: 14px;
+    padding: 5px 12px;
+    height: 34px;
+  }
+  
+  /* Герой-секция */
+  .hero-image-wrapper {
+    margin: 0;
+  }
+  
+  .text-on-image {
+    font-size: 28px;
+    line-height: 34px;
+    max-width: 90%;
+    top: 20px;
+    left: 15px;
+  }
+  
+  .text-demo {
+    font-size: 16px;
+    line-height: 20px;
+    bottom: 60px;
+    left: 15px;
+    width: auto;
+  }
+  
+  .qr-instruction {
+    font-size: 14px;
+    line-height: 18px;
+    bottom: 30px;
+    left: 15px;
+    width: auto;
+  }
+
+  /* Текстовые блоки */
+  .text-block p, .text-block1 p, .text-block2 p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /* Заголовки */
+  .big-text1, .big-text2, 
+  .big-text3, .big-text4,
+  .pay-text {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  /* Бренды */
+  .brand-logo {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  .text-on-image {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .connect-button {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  /* Текстовые блоки */
+  .text-block, .text-block1, .text-block2 {
+    padding: 15px;
+  }
+
+  .text-block p, .text-block1 p, .text-block2 p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  /* Заголовки */
+  .big-text1, .big-text2, 
+  .big-text3, .big-text4,
+  .pay-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /* Бренды */
+  .brands-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .brand-logo {
+    width: 80px;
+    height: 40px;
+  }
 }
