@@ -1103,22 +1103,58 @@ body {
     margin-left: 69px;
 }
 
-/*
-.What-hotels-say {
-    position: relative;
-    margin: 82px 0px 0px 30px;
-    width: 450px;
+.image-text {
+    display: flex; /* Используем Flexbox */
+    align-items: flex-start; /* Выравниваем элементы по вертикали */
+    gap: 50px; /* Расстояние между изображением и текстом */
+    max-width: 1258px; /* Максимальная ширина контейнера */
+    margin: 43px 0px 0px 30px;
+}
+
+.image-of-woman {
+    margin-top: 18px;
+    width: 407px;
+    height: 474px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.Hoteza-text {
+    text-align: left;
+    /* flex: 1; Текст занимает оставшееся пространство */
+}
+
+.Hoteza-text-1 {
+    width: 800px;
     color: #000;
     font-family: Roboto;
-    font-size: 52px;
+    font-size: 46px;
     font-style: normal;
     font-weight: 400;
-    line-height: 58px;
+    line-height: 51px; /* 110.87% */
 }
-*/
 
+.Rowe {
+    margin-top: 47px;
+    width: 149px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 130.435% */
+}
 
-
+.Director {
+    margin-top: 3px;
+    width: 624px;
+    color: #707378;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
 
 
 /* Стили для блока с текстом big-text*/
@@ -1463,4 +1499,13 @@ body {
     width: 80px;
     height: 40px;
   }
+}
+
+@media (max-width: 768px) {
+    .image-text {
+        flex-direction: column; /* Элементы в столбец */
+    }
+    .image-of-woman {
+        width: 100%; /* Изображение на всю ширину */
+    }
 }
